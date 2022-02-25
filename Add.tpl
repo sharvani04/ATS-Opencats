@@ -54,17 +54,8 @@
                             </td>
 
                             <td class="tdData">
-                                <input type="hidden" name="companyID" id="companyID" value="<?php if ($this->selectedCompanyID === false) { if (isset($this->jobOrderSourceRS['companyID'])) { echo ($this->jobOrderSourceRS['companyID']); } else { echo(0); } } else { echo($this->selectedCompanyID); } ?>" />
-
-                                
-                                <iframe id="helpShim" src="javascript:void(0);" scrolling="no" frameborder="0" style="position:absolute; display:none;"></iframe>
-                                <div id="CompanyResults" class="ajaxSearchResults"></div>
-
-                                <?php if ($this->defaultCompanyID !== false): ?>
-                                    <input type="radio" name="typeCompany" id="defaultCompany" onchange="if(document.getElementById('companyName').disabled == false && document.getElementById('companyID').value > 0) {oldCompanyID = document.getElementById('companyID').value; } else if(document.getElementById('companyName').disabled == false) { oldCompanyID = 0; } document.getElementById('companyName').disabled = true; document.getElementById('companyID').value = '<?php echo($this->defaultCompanyID); ?>'; ">&nbsp;Techigai<br />
-                                <?php endif; ?>
-
-                                <script type="text/javascript">oldCompanyID = -1; watchCompanyIDChangeJO('<?php echo($this->sessionCookie); ?>');</script>
+                                <input type="hidden" name="companyID" id="companyID" value="<?php echo($this->defaultCompanyID); ?>" />
+                                Techigai
                             </td>
 
                             <td class="tdVertical">
