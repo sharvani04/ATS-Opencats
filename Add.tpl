@@ -128,11 +128,7 @@
                                 <label id="cityLabel" for="city">City:</label>
                             </td>
                             <td class="tdData">
-                                <?php if ($this->selectedCompanyID !== false): ?>
-                                    <input type="text" tabindex="4" class="inputbox" id="city" name="city" value="<?php $this->_($this->selectedCompanyLocation['city']); ?>" style="width: 150px;" />&nbsp;*
-                                <?php else: ?>
-                                    <input type="text" tabindex="4" class="inputbox" id="city" name="city" value="Hyderabad" Disabled style="width: 150px; " />&nbsp;
-                                <?php endif; ?>
+                                <input type="text" tabindex="4" class="inputbox" id="city" name="city" value="Hyderabad" style="width: 150px;" readonly/>&nbsp;*
                             </td>
 
                                                         <td class="tdVertical">
@@ -148,11 +144,7 @@
                                 <label id="stateLabel" for="state">State:</label>
                             </td>
                             <td class="tdData">
-                                <?php if ($this->selectedCompanyID !== false): ?>
-                                    <input type="text" tabindex="5" class="inputbox" id="state" name="state" value="<?php $this->_($this->selectedCompanyLocation['state']); ?>" style="width: 150px;" />&nbsp;*
-                                <?php else: ?>
-                                    <input type="text" tabindex="5" class="inputbox" id="state" name="state" value="Telangana" Disabled style="width: 150px;" />&nbsp;
-                                <?php endif; ?>
+                                <input type="text" tabindex="5" class="inputbox" id="state" name="state" value="Telangana" style="width: 150px;" readonly/>&nbsp;*
                             </td>
 
                             <td class="tdVertical">
